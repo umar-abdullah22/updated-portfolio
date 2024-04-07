@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import AboutPic from '../../assets/Images/AboutProfile.png'
 import { AboutImages, Coder, Designer } from './constant'
 import Marquee from "react-fast-marquee";
+import Chart from '../../components/PieChart-About';
 
 
 const About = () => {
@@ -26,7 +27,7 @@ const About = () => {
           <img key={item.key} src={AboutPic} alt="AboutPic" width={150} height={150} className=' border-8 border-black/10 rounded-md' />
         ))}
       </div>
-      <div className='my-10 mx-20 flex justify-between'>
+      <div className='my-10 mx-20 flex items-start justify-between'>
         <div>
           {Designer.map((item, index) => (
             <div key={index}>
@@ -40,7 +41,7 @@ const About = () => {
           ))}
         </div>
         <div>
-          PieChart
+          <Chart />
         </div>
         <div>
           {Coder.map((item, index) => (

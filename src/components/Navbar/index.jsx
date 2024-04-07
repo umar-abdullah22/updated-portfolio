@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from '../../assets/Images/logo.png'
-import { menu } from './constant';
-import { socialMenu } from './constant';
+import { menu, socialMenu } from './constant';
 import { NavbarStyling } from './style';
 import { Link } from 'react-router-dom';
 
@@ -10,10 +9,10 @@ const Navbar = () => {
         <>
             <NavbarStyling>
                 <div className='w-full bg-black px-20 py-2 flex items-center justify-between' style={{ background: 'linear-gradient(90deg, rgba(11,168,243,1) 0%, rgba(5,106,162,1) 50%, rgba(11,168,243,1) 100%)' }}>
-                    <div className='w-2/5 flex items-center gap-5 borderYtoX'>
+                    <div className='w-2/5 flex items-center gap-5'>
                         {socialMenu.map(item => (
-                            <Link to={item.link} className='text-white relative px-4 p-1' key={item.key}>
-                                {item.label}
+                            <Link to={item.link} className='text-black' key={item.key}>
+                                <img src={item.label} alt="item.label" className='w-10 h-10' />
                             </Link>
                         ))}
                     </div>

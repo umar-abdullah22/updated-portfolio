@@ -1,3 +1,6 @@
+import FacebookIcon from "../../assets/svg/ic_facebook.svg"
+import InstagramIcon from "../../assets/svg/ic_instagram.svg"
+import LinkedinIcon from "../../assets/svg/ic_linkedin.svg"
 
 export const menu = [
     {
@@ -8,7 +11,7 @@ export const menu = [
     {
         key: 2,
         label: "Portfolio",
-        link: "/"
+        link: "/portfolio"
     },
     {
         key: 3,
@@ -21,17 +24,17 @@ export const menu = [
 export const socialMenu = [
     {
         key: 1,
-        label: "Facebook",
+        label: FacebookIcon,
         link: "/"
     },
     {
         key: 2,
-        label: "Instagram",
+        label: InstagramIcon,
         link: "/"
     },
     {
         key: 3,
-        label: "LinkedIn",
+        label: LinkedinIcon,
         link: "/"
     },
 ];
