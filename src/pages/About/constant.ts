@@ -1,28 +1,74 @@
-import AboutPic from '../../assets/Images/AboutProfile.png'
 
 export const AboutImages = [
     {
         key: 1,
-        content: {AboutPic},
+        content: "",
     },
     {
         key: 2,
-        content: {AboutPic},
+        content: "",
     },
     {
         key: 3,
-        content: {AboutPic},
+        content: "",
     },
     {
         key: 3,
-        content: {AboutPic},
+        content: "",
     },
     {
         key: 4,
-        content: {AboutPic},
+        content: "",
     },
     {
         key: 5,
-        content: {AboutPic},
+        content: "",
     },
+]
+
+export const Designer = [
+    {
+        title: "Part of Design",
+        part: [
+            {
+                parts: "LOrem"
+            },
+            {
+                parts: "LOrem"
+            },
+            {
+                parts: "LOrem"
+            },
+            {
+                parts: "LOrem"
+            },
+            {
+                parts: "LOrem"
+            },
+        ]
+    }
+]
+
+
+export const Coder = [
+    {
+        title: "Part of Code",
+        part: [
+            {
+                parts: "LOrem"
+            },
+            {
+                parts: "LOrem"
+            },
+            {
+                parts: "LOrem"
+            },
+            {
+                parts: "LOrem"
+            },
+            {
+                parts: "LOrem"
+            },
+        ]
+    }
 ]

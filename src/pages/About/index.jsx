@@ -1,8 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import AboutPic from '../../assets/Images/AboutProfile.png'
-import { AboutImages } from './constant'
-import { PieChart } from '@mui/x-charts/PieChart';
+import { AboutImages, Coder, Designer } from './constant'
+import Marquee from "react-fast-marquee";
 
 
 const About = () => {
@@ -26,7 +26,43 @@ const About = () => {
           <img key={item.key} src={AboutPic} alt="AboutPic" width={150} height={150} className=' border-8 border-black/10 rounded-md' />
         ))}
       </div>
-      <div className='my-10'>
+      <div className='my-10 mx-20 flex justify-between'>
+        <div>
+          {Designer.map((item, index) => (
+            <div key={index}>
+              <h2 className='text-black text-2xl'>{item.title}</h2>
+              <ul className='list-disc pl-4'>
+                {item.part.map((partItem, partIndex) => (
+                  <li className='text-sm mt-2' key={partIndex}>{partItem.parts}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <div>
+          PieChart
+        </div>
+        <div>
+          {Coder.map((item, index) => (
+            <div key={index}>
+              <h2 className='text-black text-2xl'>{item.title}</h2>
+              <ul className='list-disc pl-4'>
+                {item.part.map((partItem, partIndex) => (
+                  <li className='text-sm mt-2' key={partIndex}>{partItem.parts}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <Marquee>
+          <div className='flex gap-4'>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>REACT JS</p>
+          </div>
+        </Marquee>
       </div>
     </>
   )
