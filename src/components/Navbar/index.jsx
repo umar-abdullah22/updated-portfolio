@@ -17,7 +17,9 @@ const Navbar = () => {
                         ))}
                     </div>
                     <div className='w-1/5 flex justify-center items-center'>
-                        <img src={Logo} alt="Logo" className='h-16 w-16 rounded-full' />
+                        <Link to="/">
+                            <img src={Logo} alt="Logo" className='h-16 w-16 rounded-full' />
+                        </Link>
                     </div>
                     <div className='w-2/5 flex items-center justify-end gap-5 borderYtoX'>
                         {menu.map(item => (
