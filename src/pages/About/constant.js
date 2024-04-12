@@ -1,28 +1,30 @@
+import ProfilePic from '../../assets/Images/Profile.png'
+
 
 export const AboutImages = [
     {
         key: 1,
-        content: "",
+        content: ProfilePic,
     },
     {
         key: 2,
-        content: "",
+        content: ProfilePic,
     },
     {
         key: 3,
-        content: "",
+        content: ProfilePic,
     },
     {
         key: 3,
-        content: "",
+        content: ProfilePic,
     },
     {
         key: 4,
-        content: "",
+        content: ProfilePic,
     },
     {
         key: 5,
-        content: "",
+        content: ProfilePic,
     },
 ]
 
@@ -31,19 +33,19 @@ export const Designer = [
         title: "Part of Design",
         part: [
             {
-                parts: "LOrem"
+                parts: "UI Design"
             },
             {
-                parts: "LOrem"
+                parts: "UX Design"
             },
             {
-                parts: "LOrem"
+                parts: "Design Systems"
             },
             {
-                parts: "LOrem"
+                parts: "Interaction Design"
             },
             {
-                parts: "LOrem"
+                parts: "Making it Pop"
             },
         ]
     }
@@ -55,19 +57,19 @@ export const Coder = [
         title: "Part of Code",
         part: [
             {
-                parts: "LOrem"
+                parts: "Front-End Development"
             },
             {
-                parts: "LOrem"
+                parts: "HTML / CSS"
             },
             {
-                parts: "LOrem"
+                parts: "JavaScript"
             },
             {
-                parts: "LOrem"
+                parts: "Swearing at my Computer"
             },
             {
-                parts: "LOrem"
+                parts: "Eating Pizza"
             },
         ]
     }

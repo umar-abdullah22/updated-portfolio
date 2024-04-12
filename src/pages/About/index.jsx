@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import AboutPic from '../../assets/Images/AboutProfile.png'
+import ProfilePic from '../../assets/Images/Profile.png'
 import { AboutImages, Coder, Designer } from './constant'
 import Marquee from "react-fast-marquee";
 import Chart from '../../components/PieChart-About';
@@ -12,9 +12,9 @@ const About = () => {
       <Helmet>
         <title>About | Portfolio</title>
       </Helmet>
-      <div className='flex items-start justify-between mx-10 mt-10 border-b border-black/10'>
+      <div className='flex items-center justify-between mx-10  border-b border-black/10'>
         <div className='w-1/2 flex justify-center'>
-          <img src={AboutPic} alt="AboutPic" width={400} height={500} className='rounded-full' />
+          <img src={ProfilePic} alt="ProfilePic" width={400} height={500} />
         </div>
         <div className='w-1/2'>
           <h1 className='text-5xl font-bold mt-5'>About</h1>
@@ -24,17 +24,17 @@ const About = () => {
       </div>
       <div className='flex justify-center gap-10 mt-5 pb-10 border-b border-black/10'>
         {AboutImages.map(item => (
-          <img key={item.key} src={AboutPic} alt="AboutPic" width={150} height={150} className=' border-8 border-black/10 rounded-md' />
+          <img key={item.key} src={item.content} alt="ProfilePic" width={150} height={150} className='w-40 h-32 object-cover object-top border-8 border-black/10 rounded-md' />
         ))}
       </div>
       <div className='my-10 mx-20 flex items-start justify-between'>
         <div>
           {Designer.map((item, index) => (
             <div key={index}>
-              <h2 className='text-black text-2xl'>{item.title}</h2>
+              <h2 className='text-black text-2xl font-semibold'>{item.title}</h2>
               <ul className='list-disc pl-4'>
                 {item.part.map((partItem, partIndex) => (
-                  <li className='text-sm mt-2' key={partIndex}>{partItem.parts}</li>
+                  <li className='text-lg mt-2' key={partIndex}>{partItem.parts}</li>
                 ))}
               </ul>
             </div>
@@ -46,10 +46,10 @@ const About = () => {
         <div>
           {Coder.map((item, index) => (
             <div key={index}>
-              <h2 className='text-black text-2xl'>{item.title}</h2>
+              <h2 className='text-black text-2xl font-semibold'>{item.title}</h2>
               <ul className='list-disc pl-4'>
                 {item.part.map((partItem, partIndex) => (
-                  <li className='text-sm mt-2' key={partIndex}>{partItem.parts}</li>
+                  <li className='text-lg mt-2' key={partIndex}>{partItem.parts}</li>
                 ))}
               </ul>
             </div>
