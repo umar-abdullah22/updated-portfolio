@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import ProfilePic from '../../assets/Images/Profile.png'
-import { AboutImages, Coder, Designer } from './constant'
+import { AboutImages, Coder, Designer, ProgrammingLanguages } from './constant'
 import Marquee from "react-fast-marquee";
 import Chart from '../../components/PieChart-About';
 
@@ -27,7 +27,7 @@ const About = () => {
           <img key={item.key} src={item.content} alt="ProfilePic" width={150} height={150} className='w-40 h-32 object-cover object-top border-8 border-black/10 rounded-md' />
         ))}
       </div>
-      <div className='my-10 mx-20 flex items-start justify-between'>
+      <div className='w-2/3 my-10 mx-auto flex items-start justify-between'>
         <div>
           {Designer.map((item, index) => (
             <div key={index}>
@@ -59,9 +59,9 @@ const About = () => {
       <div>
         <Marquee>
           <div className='flex gap-4'>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>REACT JS</p>
+            {ProgrammingLanguages.map(item => (
+              <img key={item.key} src={item.content} alt={item.content} width={80} height={80} />
+            ))}
           </div>
         </Marquee>
       </div>

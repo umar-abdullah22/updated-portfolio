@@ -6,7 +6,7 @@ const Chart = () => {
         <>
             <PieChart
                 width={400}
-                height={300}
+                height={240}
                 series={[
                     {
                         data: [
