@@ -59,15 +59,7 @@ const About = () => {
           ))}
         </div>
       </div>
-      <div>
-        <Marquee>
-          <div className='flex gap-4'>
-            {ProgrammingLanguages.map(item => (
-              <img key={item.key} src={item.content} alt={item.content} width={80} height={80} />
-            ))}
-          </div>
-        </Marquee>
-      </div>
+
 
       <div className='flex justify-center items-center'>
         <div className='w-1/2'>
@@ -81,6 +73,16 @@ const About = () => {
 
       <div>
         <BarsDataset />
+      </div>
+
+      <div>
+        <Marquee>
+          <div className='flex gap-4'>
+            {ProgrammingLanguages.map(item => (
+              <img key={item.key} src={item.content} alt={item.content} width={100} height={100} />
+            ))}
+          </div>
+        </Marquee>
       </div>
 
       <div className='flex justify-center items-center'>
