@@ -16,7 +16,7 @@ export const menu = [
     {
         key: 3,
         label: "Contact",
-        link: "/"
+        link: "/contact"
     },
 ];
 

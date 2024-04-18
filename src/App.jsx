@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import MainApp from './pages/main-app';
 import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 
 const App = () => {
   return (
@@ -21,6 +22,11 @@ const App = () => {
         <Route path="/portfolio" element={
           <MainApp>
             <Portfolio />
+          </MainApp>
+        } />
+        <Route path="/contact" element={
+          <MainApp>
+            <Contact />
           </MainApp>
         } />
       </Routes>
