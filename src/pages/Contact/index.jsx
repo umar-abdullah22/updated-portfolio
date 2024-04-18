@@ -14,12 +14,12 @@ const Contact = () => {
             <div className='flex items-center justify-center gap-20 mx-10  border-b border-black/10'>
                 <div className='w-[400px]'>
                     <h1 className='text-5xl font-bold mt-5'>Contact</h1>
-                    <h3 className='text-3xl mt-5'>Get in touch with me via social media or email.</h3>
+                    <h3 className='text-xl mt-5'>Get in touch with me via social media or email.</h3>
                     <div className='grid grid-cols-2 gap-4 mt-5'>
                         {Socials.map(item => (
                             <Link to={item.link} key={item.key} className='flex items-center gap-4'>
-                                <img src={item.socialIcon} alt={item.socialIcon} className='w-14 h-14' />
-                                <h4 className='text-lg font-semibold'>{item.label}</h4>
+                                <img src={item.socialIcon} alt={item.socialIcon} className='w-12 h-12' />
+                                <h4 className='text-base font-semibold'>{item.label}</h4>
                             </Link>
                         ))
                         }
