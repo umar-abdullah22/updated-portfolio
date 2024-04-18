@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import PortfolioPic from '../../assets/Images/Profile.png'
+import PortfolioPic from '../../assets/Images/PortfolioHeroSection.png'
 
 const Portfolio = () => {
     return (
@@ -9,8 +9,8 @@ const Portfolio = () => {
                 <title>Portfolio | Portfolio</title>
             </Helmet>
             <div className='flex items-center justify-between mx-10  border-b border-black/10'>
-                <div className='w-1/2 flex justify-center'>
-                    <img src={PortfolioPic} alt="PortfolioPic" width={400} height={500} />
+                <div className='w-1/2'>
+                    <img src={PortfolioPic} alt="PortfolioPic" className='ml-auto' width={800} height={600} />
                 </div>
                 <div className='w-1/2'>
                     <h1 className='text-5xl font-bold mt-5'>Portfolio</h1>

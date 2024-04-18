@@ -1,9 +1,12 @@
 import React from 'react'
+// import Link from 'react-router-dom'
 import Helmet from 'react-helmet'
 import ProfilePic from '../../assets/Images/Profile.png'
 import { AboutImages, Coder, Designer, ProgrammingLanguages } from './constant'
 import Marquee from "react-fast-marquee";
 import Chart from '../../components/PieChart-About';
+import PortfolioPic from '../../assets/Images/PortfolioHeroSection.png'
+import BarsDataset from '../../components/BarChart-About';
 
 
 const About = () => {
@@ -65,6 +68,33 @@ const About = () => {
           </div>
         </Marquee>
       </div>
+
+      <div className='flex justify-center items-center'>
+        <div className='w-1/2'>
+          <img src={PortfolioPic} alt="PortfolioPic" className='ml-auto' width={600} height={600} />
+        </div>
+        <div className='w-1/2'>
+          <h3 className='text-3xl mt-5'>Random Facts</h3>
+          <p className='w-[400px] mt-5 text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur illo voluptatum eaque quis iste aliquam possimus id. Ad fugit molestias eos, harum quo aspernatur suscipit laboriosam doloribus similique facilis atque!</p>
+        </div>
+      </div>
+
+      <div>
+        <BarsDataset />
+      </div>
+
+      <div className='flex justify-center items-center'>
+        <div className=''>
+            <h3 className='text-3xl mt-5'>My story</h3>
+            <p className='w-[400px] my-5 text-lg'>Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I've learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
+            <span className='underline hover:no-underline cursor-pointer text-sm'>Read My Story</span>
+        </div>
+        <div className=''>
+          <img src={PortfolioPic} alt="PortfolioPic" width={600} height={600} />
+        </div>
+      </div>
+
+
     </>
   )
 }
