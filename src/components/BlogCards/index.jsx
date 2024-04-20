@@ -16,7 +16,7 @@ const BlogCards = ({ image, title, description }) => { // Destructure props
                     title={title} // Use title from props
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="h5" component="div" className='text-[#000000B3]'>
                         {title}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
@@ -24,7 +24,7 @@ const BlogCards = ({ image, title, description }) => { // Destructure props
                     </Typography>
                 </CardContent>
                 <CardActions className='justify-end'>
-                    <Button size="small">Learn More</Button>
+                    <Button size="small">Read More</Button>
                 </CardActions>
             </Card>
         </>

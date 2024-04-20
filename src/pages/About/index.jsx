@@ -15,30 +15,30 @@ const About = () => {
       <Helmet>
         <title>About | Portfolio</title>
       </Helmet>
-      <div className='flex items-center justify-between mx-10  border-b border-black/10'>
+      <div className='flex items-center justify-between mx-10  border-b border-black/10' >
         <div className='w-1/2 flex justify-center'>
           <img src={ProfilePic} alt="ProfilePic" width={400} height={500} />
         </div>
-        <div className='w-1/2'>
+        <div className='w-1/2 text-[#000000B3]'>
           <h1 className='text-5xl font-bold mt-5'>About</h1>
           <h3 className='text-3xl mt-5'>I'm a full stack developer based in lahore, pakistan</h3>
           <p className='mt-5 text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur illo voluptatum eaque quis iste aliquam possimus id. Ad fugit molestias eos, harum quo aspernatur suscipit laboriosam doloribus similique facilis atque!</p>
         </div>
       </div>
-      <div className='flex justify-center gap-10 mt-5 pb-10 border-b border-black/10'>
+      <div className='flex justify-center gap-10 py-10 border-b border-black/10'>
         {AboutImages.map(item => (
           <img key={item.key} src={item.content} alt="ProfilePic" width={150} height={150} className='w-40 h-32 object-cover object-top border-8 border-black/10 rounded-md' />
         ))}
       </div>
-      <div className='bg-[#f5f5f5] py-3 border-t border-b'>
+      <div className='py-3 border-t border-b' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
         <div className='w-2/3 my-10 mx-auto flex items-start justify-between '>
           <div>
             {Designer.map((item, index) => (
               <div key={index}>
-                <h2 className='text-black text-2xl font-semibold'>{item.title}</h2>
+                <h2 className='text-[#000000B3] text-2xl font-semibold'>{item.title}</h2>
                 <ul className='list-disc pl-4'>
                   {item.part.map((partItem, partIndex) => (
-                    <li className='text-lg mt-2' key={partIndex}>{partItem.parts}</li>
+                    <li className=' text-[#000000B3] text-lg mt-2' key={partIndex}>{partItem.parts}</li>
                   ))}
                 </ul>
               </div>
@@ -50,10 +50,10 @@ const About = () => {
           <div>
             {Coder.map((item, index) => (
               <div key={index}>
-                <h2 className='text-black text-2xl font-semibold'>{item.title}</h2>
+                <h2 className='text-[#000000B3] text-2xl font-semibold'>{item.title}</h2>
                 <ul className='list-disc pl-4'>
                   {item.part.map((partItem, partIndex) => (
-                    <li className='text-lg mt-2' key={partIndex}>{partItem.parts}</li>
+                    <li className=' text-[#000000B3] text-lg mt-2' key={partIndex}>{partItem.parts}</li>
                   ))}
                 </ul>
               </div>
@@ -77,22 +77,22 @@ const About = () => {
       </div>
 
 
-      <div className='flex justify-center items-center bg-[#f5f5f5] py-3 border-t border-b'>
+      <div className='flex justify-center items-center py-3 border-t border-b' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
         <div className='w-1/2'>
           <img src={PortfolioPic} alt="PortfolioPic" className='ml-auto' width={600} height={600} />
         </div>
         <div className='w-1/2'>
-          <h3 className='text-3xl mt-5'>Random Facts</h3>
-          <p className='w-[400px] mt-5 text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur illo voluptatum eaque quis iste aliquam possimus id. Ad fugit molestias eos, harum quo aspernatur suscipit laboriosam doloribus similique facilis atque!</p>
+          <h3 className='text-[#000000B3] text-3xl mt-5'>Random Facts</h3>
+          <p className='text-[#000000B3] w-[400px] mt-5 text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur illo voluptatum eaque quis iste aliquam possimus id. Ad fugit molestias eos, harum quo aspernatur suscipit laboriosam doloribus similique facilis atque!</p>
         </div>
       </div>
 
 
 
-      <div className='flex justify-center items-center'>
+      <div className='flex justify-center items-center' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
         <div className=''>
-          <h3 className='text-3xl mt-5'>My story</h3>
-          <p className='w-[400px] my-5 text-lg'>Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I've learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
+          <h3 className='text-[#000000B3] text-3xl mt-5'>My story</h3>
+          <p className='text-[#000000B3] w-[400px] my-5 text-lg'>Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I've learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
           <span className='underline hover:no-underline cursor-pointer text-sm'>Read My Story</span>
         </div>
         <div className=''>
