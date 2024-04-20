@@ -4,7 +4,8 @@ import Helmet from 'react-helmet'
 import { AboutHeroSectionContent, AboutImages, Coder, Designer, ProgrammingLanguages } from './constant'
 import Marquee from "react-fast-marquee";
 import Chart from '../../components/PieChart-About';
-import PortfolioPic from '../../assets/Images/PortfolioHeroSection.png'
+import Facts from '../../assets/Images/Facts.png'
+import Story from '../../assets/Images/Story.png'
 import BarsDataset from '../../components/BarChart-About';
 
 
@@ -16,15 +17,15 @@ const About = () => {
       </Helmet>
       {AboutHeroSectionContent.map(item => (
         <div className='flex items-center justify-between mx-10  border-b border-black/10' >
-        <div className='w-1/2 flex justify-center'>
-          <img src={item.profileImage} alt={item.profileImage} width={400} height={500} />
+          <div className='w-1/2 flex justify-center'>
+            <img src={item.profileImage} alt={item.profileImage} width={400} height={500} />
+          </div>
+          <div className='w-1/2 text-[#000000B3]'>
+            <h1 className='text-5xl font-bold mt-5'>{item.title}</h1>
+            <h3 className='text-3xl mt-5 font-semibold capitalize'>{item.subTitle}</h3>
+            <p className='mt-2 text-lg'>{item.description}</p>
+          </div>
         </div>
-        <div className='w-1/2 text-[#000000B3]'>
-          <h1 className='text-5xl font-bold mt-5'>{item.title}</h1>
-          <h3 className='text-3xl mt-5 font-semibold capitalize'>{item.subTitle}</h3>
-          <p className='mt-2 text-lg'>{item.description}</p>
-        </div>
-      </div>
       ))}
       <div className='flex justify-center gap-10 py-10 border-b border-black/10'>
         {AboutImages.map(item => (
@@ -80,11 +81,18 @@ const About = () => {
 
       <div className='flex justify-center items-center py-3 border-t border-b' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
         <div className='w-1/2'>
-          <img src={PortfolioPic} alt="PortfolioPic" className='ml-auto' width={600} height={600} />
+          <img src={Facts} alt="Facts" className='ml-auto' width={600} height={600} />
         </div>
         <div className='w-1/2'>
           <h3 className='text-[#000000B3] text-3xl mt-5'>Random Facts</h3>
-          <p className='text-[#000000B3] w-[400px] mt-5 text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur illo voluptatum eaque quis iste aliquam possimus id. Ad fugit molestias eos, harum quo aspernatur suscipit laboriosam doloribus similique facilis atque!</p>
+          <p className='text-[#000000B3] w-[400px] mt-5 text-lg'>I drink a lot of tea
+            I'm into interior design
+            Gardening is my zen time
+            I love to cook (and eat)
+            I'm a bit of a clean freak
+            I want to live on Pandora
+            I'm slightly addicted to Twitter
+            Yoda is my mentor</p>
         </div>
       </div>
 
@@ -97,7 +105,7 @@ const About = () => {
           <span className='underline hover:no-underline cursor-pointer text-sm'>Read My Story</span>
         </div>
         <div className=''>
-          <img src={PortfolioPic} alt="PortfolioPic" width={600} height={600} />
+          <img src={Story} alt={Story} width={600} height={600} />
         </div>
       </div>
 
