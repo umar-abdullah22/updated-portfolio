@@ -1,11 +1,10 @@
 import React from 'react'
 // import Link from 'react-router-dom'
 import Helmet from 'react-helmet'
-import { AboutHeroSectionContent, AboutImages, Coder, Designer, ProgrammingLanguages } from './constant'
+import { AboutHeroSectionContent, AboutImages, Coder, Designer, FactsStory, ProgrammingLanguages } from './constant'
 import Marquee from "react-fast-marquee";
 import Chart from '../../components/PieChart-About';
-import Facts from '../../assets/Images/Facts.png'
-import Story from '../../assets/Images/Story.png'
+
 import BarsDataset from '../../components/BarChart-About';
 
 
@@ -78,38 +77,33 @@ const About = () => {
         </Marquee>
       </div>
 
-
-      <div className='flex justify-center items-center py-3 border-t border-b' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
-        <div className='w-1/2'>
-          <img src={Facts} alt="Facts" className='ml-auto' width={600} height={600} />
+      {FactsStory.map((item, index) => (
+        <div key={index}>
+          {index === 0 ? (
+            <div className='flex justify-center items-center py-5 border-t border-b' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
+              <div className='w-1/2'>
+                <img src={item.image} alt={item.image} className='ml-auto' width={600} height={600} />
+              </div>
+              <div className='w-1/2'>
+                <h3 className='text-[#000000B3] text-3xl mt-5'>{item.title}</h3>
+                <p className='text-[#000000B3] w-[400px] mt-5 text-lg'>{item.description}</p>
+              </div>
+            </div>
+          ) : (
+            <div className='flex justify-center items-center pt-5' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
+              <div className=''>
+                <h3 className='text-[#000000B3] text-3xl mt-5'>{item.title}</h3>
+                <p className='text-[#000000B3] w-[400px] my-5 text-lg'>{item.description}</p>
+                <span className='underline hover:no-underline cursor-pointer text-sm'>Read My Story</span>
+              </div>
+              <div className=''>
+                <img src={item.image} alt={item.image} width={600} height={600} />
+              </div>
+            </div>
+          )
+          }
         </div>
-        <div className='w-1/2'>
-          <h3 className='text-[#000000B3] text-3xl mt-5'>Random Facts</h3>
-          <p className='text-[#000000B3] w-[400px] mt-5 text-lg'>I drink a lot of tea
-            I'm into interior design
-            Gardening is my zen time
-            I love to cook (and eat)
-            I'm a bit of a clean freak
-            I want to live on Pandora
-            I'm slightly addicted to Twitter
-            Yoda is my mentor</p>
-        </div>
-      </div>
-
-
-
-      <div className='flex justify-center items-center' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
-        <div className=''>
-          <h3 className='text-[#000000B3] text-3xl mt-5'>My story</h3>
-          <p className='text-[#000000B3] w-[400px] my-5 text-lg'>Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I've learned, book recommendations, and even some sneak peeks of the first websites I created.</p>
-          <span className='underline hover:no-underline cursor-pointer text-sm'>Read My Story</span>
-        </div>
-        <div className=''>
-          <img src={Story} alt={Story} width={600} height={600} />
-        </div>
-      </div>
-
-
+      ))}
     </>
   )
 }

@@ -1,5 +1,6 @@
 import ProfilePic from '../../assets/Images/Profile.png'
-
+import Facts from '../../assets/Images/Facts.png'
+import Story from '../../assets/Images/Story.png'
 
 export const AboutHeroSectionContent = [
     {
@@ -8,6 +9,21 @@ export const AboutHeroSectionContent = [
         subTitle: `I'm Umar Abdullah`,
         description: "Passionate Full Stack Engineer from Lahore, Pakistan. Graduated from PUCIT in 2021. Skilled in UI design, backend development, and problem-solving. Enthusiastic about exploring new technologies and contributing to the tech community. Let's connect and build something amazing!"
     }
+]
+
+export const FactsStory = [
+    {
+        key: 1,
+        image: Facts,
+        title: "Random Facts",
+        description: "I drink a lot of tea I'm into interior design Gardening is my zen time I love to cook (and eat) I'm a bit of a clean freak I want to live on Pandora I'm slightly addicted to Twitter Yoda is my mentor.",
+    },
+    {
+        key: 2,
+        image: Story,
+        title: "My Story",
+        description: "Learn a little bit more about me, how I got into design, and how I built my career as a product designer. I’ve included key things I've learned, book recommendations, and even some sneak peeks of the first websites I created.",
+    },
 ]
 
 export const AboutImages = [
