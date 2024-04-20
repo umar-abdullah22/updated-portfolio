@@ -4,6 +4,7 @@ import About from './pages/About';
 import MainApp from './pages/main-app';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import ProductView from './components/ProductView';
 
 const App = () => {
   return (
@@ -27,6 +28,11 @@ const App = () => {
         <Route path="/contact" element={
           <MainApp>
             <Contact />
+          </MainApp>
+        } />
+        <Route path="/product-view" element={
+          <MainApp>
+            <ProductView />
           </MainApp>
         } />
       </Routes>
