@@ -1,17 +1,22 @@
+import sumTube from '../../assets/Images/sumTube.png'
+import lineUpPolo from '../../assets/Images/lineUpPolo.png'
+import lieBeVaLo from '../../assets/Images/lieBeVaLo.png'
+
+
 export const LatestCards = [
     {
-        CardImage: "https://picsum.photos/200/300",
-        Title: "Lizard",
-        Description: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+        CardImage: sumTube,
+        Title: "SumTube",
+        Description: "SumTube AI, a cutting-edge YouTube video summarizer. With lightning speed, it extracts text summaries for any video. Empower your content curation effortlessly!",
     },
     {
-        CardImage: "https://picsum.photos/200/300",
-        Title: "Lizard",
-        Description: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+        CardImage: lineUpPolo,
+        Title: "LineUpPolo",
+        Description: "Lineup Polo, founded by Alice & Rosanna, revolutionizes polo management with a free app & web portal, automating tournaments & fostering community.",
     },
     {
-        CardImage: "https://picsum.photos/200/300",
-        Title: "Lizard",
-        Description: "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+        CardImage: lieBeVaLo,
+        Title: "LieBevalo",
+        Description: "Liebevalo, your go-to dating app for effortless connections. With its intuitive interface and innovative features, finding love has never been easier.",
     },
 ]

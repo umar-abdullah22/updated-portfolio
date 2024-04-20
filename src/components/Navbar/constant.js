@@ -25,16 +25,16 @@ export const socialMenu = [
     {
         key: 1,
         label: FacebookIcon,
-        link: "/"
+        link: "https://www.facebook.com/umer.abdullah.900/"
     },
     {
         key: 2,
         label: InstagramIcon,
-        link: "/"
+        link: "https://www.instagram.com/m_umar_abdullahh"
     },
     {
         key: 3,
         label: LinkedinIcon,
-        link: "/"
+        link: "https://www.linkedin.com/in/umar199822/"
     },
 ];

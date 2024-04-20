@@ -17,17 +17,17 @@ const chartSetting = {
 // Dataset for the BarChart
 const dataset = [
     { percentage: 100, month: 'HTML' },
-    { percentage: 50, month: 'CSS' },
-    { percentage: 47, month: 'JavaScript' },
-    { percentage: 54, month: 'React' },
-    { percentage: 57, month: 'NodeJs' },
-    { percentage: 60, month: 'NextJs' },
-    { percentage: 59, month: 'ExpressJs' },
-    { percentage: 65, month: 'Python' },
-    { percentage: 51, month: 'Angular' },
-    { percentage: 60, month: 'C++' },
-    { percentage: 67, month: 'PHP' },
-    { percentage: 61, month: 'SQL' },
+    { percentage: 95, month: 'CSS' },
+    { percentage: 90, month: 'JavaScript' },
+    { percentage: 93, month: 'React' },
+    { percentage: 80, month: 'NodeJs' },
+    { percentage: 88, month: 'NextJs' },
+    { percentage: 76, month: 'ExpressJs' },
+    { percentage: 70, month: 'Python' },
+    { percentage: 85, month: 'Angular' },
+    { percentage: 90, month: 'C++' },
+    { percentage: 70, month: 'PHP' },
+    { percentage: 90, month: 'SQL' },
 ];
 
 // Formatter for displaying values
