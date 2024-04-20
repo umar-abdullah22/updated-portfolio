@@ -5,6 +5,7 @@ import MainApp from './pages/main-app';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import ProductView from './components/ProductView';
+import Experience from './pages/Experience';
 
 const App = () => {
   return (
@@ -28,6 +29,11 @@ const App = () => {
         <Route path="/contact" element={
           <MainApp>
             <Contact />
+          </MainApp>
+        } />
+        <Route path="/experience" element={
+          <MainApp>
+            <Experience />
           </MainApp>
         } />
         <Route path="/product-view" element={

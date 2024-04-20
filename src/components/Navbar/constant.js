@@ -1,4 +1,4 @@
-import FacebookIcon from "../../assets/svg/ic_facebook.svg"
+import GithubIcon from "../../assets/svg/ic_github.svg"
 import InstagramIcon from "../../assets/svg/ic_instagram.svg"
 import LinkedinIcon from "../../assets/svg/ic_linkedin.svg"
 
@@ -10,22 +10,28 @@ export const menu = [
     },
     {
         key: 2,
+        label: "Experience",
+        link: "/experience"
+    },
+    {
+        key: 3,
         label: "Portfolio",
         link: "/portfolio"
     },
     {
-        key: 3,
+        key: 4,
         label: "Contact",
         link: "/contact"
     },
+    
 ];
 
 
 export const socialMenu = [
     {
         key: 1,
-        label: FacebookIcon,
-        link: "https://www.facebook.com/umer.abdullah.900/"
+        label: GithubIcon,
+        link: "https://github.com/umar-abdullah22"
     },
     {
         key: 2,

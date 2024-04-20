@@ -1,4 +1,4 @@
-import FacebookIcon from "../../assets/Images/Socials/1.png"
+import GithubIcon from "../../assets/Images/Socials/5.png"
 import InstagramIcon from "../../assets/Images/Socials/4.png"
 import LinkedInIcon from "../../assets/Images/Socials/2.png"
 import MailIcon from "../../assets/Images/Socials/3.png"
@@ -13,9 +13,9 @@ export const ContactHeroSectionContent = [
 export const Socials = [
     {
         key: 1,
-        socialIcon: FacebookIcon,
-        label: "Facebook",
-        link: "https://www.facebook.com/umer.abdullah.900/",
+        socialIcon: GithubIcon,
+        label: "GitHub",
+        link: "https://github.com/umar-abdullah22",
     },
     {
         key: 2,
