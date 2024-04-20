@@ -1,6 +1,15 @@
 import ProfilePic from '../../assets/Images/Profile.png'
 
 
+export const AboutHeroSectionContent = [
+    {
+        profileImage: ProfilePic,
+        title: "About",
+        subTitle: `I'm Umar Abdullah`,
+        description: "Passionate Full Stack Engineer from Lahore, Pakistan. Graduated from PUCIT in 2021. Skilled in UI design, backend development, and problem-solving. Enthusiastic about exploring new technologies and contributing to the tech community. Let's connect and build something amazing!"
+    }
+]
+
 export const AboutImages = [
     {
         key: 1,
@@ -100,6 +109,7 @@ import image_21 from '../../assets/Images/ProgrammingLanguages/21.png'
 import image_22 from '../../assets/Images/ProgrammingLanguages/22.png'
 import image_23 from '../../assets/Images/ProgrammingLanguages/23.png'
 import image_24 from '../../assets/Images/ProgrammingLanguages/24.png'
+
 
 
 export const ProgrammingLanguages = [

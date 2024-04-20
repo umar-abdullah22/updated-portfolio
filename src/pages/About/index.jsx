@@ -1,8 +1,7 @@
 import React from 'react'
 // import Link from 'react-router-dom'
 import Helmet from 'react-helmet'
-import ProfilePic from '../../assets/Images/Profile.png'
-import { AboutImages, Coder, Designer, ProgrammingLanguages } from './constant'
+import { AboutHeroSectionContent, AboutImages, Coder, Designer, ProgrammingLanguages } from './constant'
 import Marquee from "react-fast-marquee";
 import Chart from '../../components/PieChart-About';
 import PortfolioPic from '../../assets/Images/PortfolioHeroSection.png'
@@ -15,16 +14,18 @@ const About = () => {
       <Helmet>
         <title>About | Portfolio</title>
       </Helmet>
-      <div className='flex items-center justify-between mx-10  border-b border-black/10' >
+      {AboutHeroSectionContent.map(item => (
+        <div className='flex items-center justify-between mx-10  border-b border-black/10' >
         <div className='w-1/2 flex justify-center'>
-          <img src={ProfilePic} alt="ProfilePic" width={400} height={500} />
+          <img src={item.profileImage} alt={item.profileImage} width={400} height={500} />
         </div>
         <div className='w-1/2 text-[#000000B3]'>
-          <h1 className='text-5xl font-bold mt-5'>About</h1>
-          <h3 className='text-3xl mt-5 capitalize'>I'm a <span className='text-red-500'>full stack</span> developer based in lahore, pakistan</h3>
-          <p className='mt-5 text-lg'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur illo voluptatum eaque quis iste aliquam possimus id. Ad fugit molestias eos, harum quo aspernatur suscipit laboriosam doloribus similique facilis atque!</p>
+          <h1 className='text-5xl font-bold mt-5'>{item.title}</h1>
+          <h3 className='text-3xl mt-5 font-semibold capitalize'>{item.subTitle}</h3>
+          <p className='mt-2 text-lg'>{item.description}</p>
         </div>
       </div>
+      ))}
       <div className='flex justify-center gap-10 py-10 border-b border-black/10'>
         {AboutImages.map(item => (
           <img key={item.key} src={item.content} alt="ProfilePic" width={150} height={150} className='w-40 h-32 object-cover object-top border-8 border-black/10 rounded-md' />

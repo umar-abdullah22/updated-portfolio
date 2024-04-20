@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import ProfilePic from '../../assets/Images/Profile.png'
-import { HeroSectionContent, Socials } from './constant'
+import { ContactHeroSectionContent, Socials } from './constant'
 import { Link } from 'react-router-dom'
 
 
@@ -13,7 +13,7 @@ const Contact = () => {
             </Helmet>
             <div className='flex items-center justify-center gap-20 mx-10  border-b border-black/10 text-[#000000B3]'>
                 <div className='w-[400px]'>
-                    {HeroSectionContent.map(item => (
+                    {ContactHeroSectionContent.map(item => (
                         <>
                             <h1 className='text-5xl font-bold mt-5'>{item.title}</h1>
                             <h3 className='text-xl mt-5'>{item.subTitle}</h3>

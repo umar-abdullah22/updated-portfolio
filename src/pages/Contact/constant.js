@@ -3,7 +3,7 @@ import InstagramIcon from "../../assets/Images/Socials/4.png"
 import LinkedInIcon from "../../assets/Images/Socials/2.png"
 import MailIcon from "../../assets/Images/Socials/3.png"
 
-export const HeroSectionContent = [
+export const ContactHeroSectionContent = [
     {
         title: "Contact",
         subTitle: "Get in touch with me via social media or email."
