@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className='w-full bg-black px-20 py-2 flex items-center justify-between' style={{ background: 'linear-gradient(90deg, rgba(11,168,243,1) 0%, rgba(5,106,162,1) 50%, rgba(11,168,243,1) 100%)' }}>
                     <div className='w-2/5 flex items-center gap-5'>
                         {socialMenu.map(item => (
-                            <Link to={item.link} className='text-black' key={item.key}>
+                            <Link target='_blank' to={item.link} className='text-black' key={item.key}>
                                 <img src={item.label} alt="item.label" className='w-10 h-10' />
                             </Link>
                         ))}

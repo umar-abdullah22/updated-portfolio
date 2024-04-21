@@ -22,7 +22,7 @@ const Contact = () => {
                     }
                     <div className='grid grid-cols-2 gap-4 mt-5'>
                         {Socials.map(item => (
-                            <Link to={item.link} key={item.key} className='flex items-center gap-4'>
+                            <Link target='_blank' to={item.link} key={item.key} className='flex items-center gap-4'>
                                 <img src={item.socialIcon} alt={item.socialIcon} className='w-12 h-12' />
                                 <h4 className='text-base font-semibold'>{item.label}</h4>
                             </Link>
