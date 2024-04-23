@@ -6,6 +6,8 @@ import Agentur from '../../assets/Images/Agentur.png'
 import BillSupply from '../../assets/Images/BillSupply.png'
 import MedCardsNow from '../../assets/Images/MedCardsNow.png'
 import SyrusPos from '../../assets/Images/SyrusPos.png'
+import EverCare from '../../assets/Images/EverCare.png'
+import Yaya from '../../assets/Images/Yaya.png'
 
 export const CardContent = [
     {
@@ -47,6 +49,16 @@ export const CardContent = [
         CardImage: SyrusPos,
         Title: "SyrusPos",
         Description: "Your one-stop solution for POS machines. Streamline transactions, manage payments effortlessly. All-inclusive service, tailored for your business needs.",
+    },
+    {
+        CardImage: EverCare,
+        Title: "Evercare Caregiver",
+        Description: "Join Evercare Caregiver App: Impactful work, easy job applications, and rewarding care opportunities. Make a difference today!",
+    },
+    {
+        CardImage: Yaya,
+        Title: "Yaya",
+        Description: "Yaya: Your all-in-one mobile app for effortless task management, communication, and scheduling. Simplify your life today!",
     },
     
 ]
