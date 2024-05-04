@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { AboutHeroSectionContent, AboutImages, Coder, Designer, FactsStory, ProgrammingLanguages } from './constant'
 import Marquee from "react-fast-marquee";
 import Chart from '../../components/PieChart-About';
-
+import 'animate.css';
 import BarsDataset from '../../components/BarChart-About';
 
 
@@ -15,11 +15,11 @@ const About = () => {
         <title>About | Portfolio</title>
       </Helmet>
       {AboutHeroSectionContent.map(item => (
-        <div className='flex items-center justify-between mx-10  border-b border-black/10' >
+        <div className='flex items-center justify-between mx-10 border-b border-black/10 ' >
           <div className='w-1/2 flex justify-center'>
             <img src={item.profileImage} alt={item.profileImage} width={400} height={500} />
           </div>
-          <div className='w-1/2 text-[#000000B3]'>
+          <div className='w-1/2 text-[#000000B3]  animate__slow animate__delay-5s animate__zoomIn'>
             <h1 className='text-5xl font-bold mt-5'>{item.title}</h1>
             <h3 className='text-3xl mt-5 font-semibold capitalize'>{item.subTitle}</h3>
             <p className='mt-2 text-lg'>{item.description}</p>
