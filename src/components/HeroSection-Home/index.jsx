@@ -2,12 +2,13 @@ import { ReactCompareSlider } from 'react-compare-slider';
 import { HeroSectionStyle } from './style';
 import Profile from '../../assets/Images/Profile.png'
 import { Coder, Designer } from './constant';
+import 'animate.css';
 
 
 const HeroSection = () => {
     return (
         <>
-        <div className='hidden lg:block'>
+        <div className='hidden lg:block animate__fadeInDownBig'>
             <HeroSectionStyle>
                 <ReactCompareSlider
                     changePositionOnHover={true}
@@ -17,7 +18,7 @@ const HeroSection = () => {
                             <div className='w-72 mt-32'>
                                 {Designer.map((item) => (
                                     <>
-                                        <h2 className='text-6xl font-semibold text-black/70'>{item.title}</h2>
+                                        <h2 className='text-5xl xl:text-6xl font-semibold text-black/70'>{item.title}</h2>
                                         <p className='text-base text-gray-600 mt-2'>{item.description}</p>
                                     </>
                                 ))}
@@ -26,7 +27,7 @@ const HeroSection = () => {
                             <div className='w-72 mt-32 invisible'>
                                 {Coder.map((item) => (
                                     <>
-                                        <h2 className='text-6xl font-semibold text-[#000000B3]'>{item.title}</h2>
+                                        <h2 className='text-5xl xl:text-6xl font-semibold text-[#000000B3]'>{item.title}</h2>
                                         <p className='text-base text-gray-600 mt-2'>{item.description}</p>
                                     </>
                                 ))}
@@ -38,7 +39,7 @@ const HeroSection = () => {
                             <div className='w-72 mt-32 invisible'>
                                 {Designer.map((item) => (
                                     <>
-                                        <h2 className='text-6xl font-semibold text-[#000000B3]'>{item.title}</h2>
+                                        <h2 className='text-5xl xl:text-6xl font-semibold text-[#000000B3]'>{item.title}</h2>
                                         <p className='text-base text-gray-600 mt-2'>{item.description}</p>
                                     </>
                                 ))}
@@ -47,7 +48,7 @@ const HeroSection = () => {
                             <div className='w-72 mt-32'>
                                 {Coder.map((item) => (
                                     <>
-                                        <h2 className='text-6xl font-semibold text-[#000000B3]'>{item.title}</h2>
+                                        <h2 className='text-5xl xl:text-6xl font-semibold text-[#000000B3]'>{item.title}</h2>
                                         <p className='text-base text-gray-600 mt-2'>{item.description}</p>
                                     </>
                                 ))}

@@ -11,8 +11,8 @@ const Contact = () => {
             <Helmet>
                 <title>About | Portfolio</title>
             </Helmet>
-            <div className='flex items-center justify-center gap-20 mx-10  border-b border-black/10 text-[#000000B3]'>
-                <div className='w-[400px]'>
+            <div className='flex flex-col-reverse md:flex-row items-center justify-center gap-5 md:gap-20 mx-5 md:mx-10 border-b border-black/10 text-[#000000B3]'>
+                <div className='w-full md:w-[400px]'>
                     {ContactHeroSectionContent.map(item => (
                         <>
                             <h1 className='text-5xl font-bold mt-5'>{item.title}</h1>
@@ -20,7 +20,7 @@ const Contact = () => {
                         </>
                     ))
                     }
-                    <div className='grid grid-cols-2 gap-4 mt-5'>
+                    <div className='grid grid-cols-2 gap-4 mb-5 md:mb-0 mt-5'>
                         {Socials.map(item => (
                             <Link target='_blank' to={item.link} key={item.key} className='flex items-center gap-4'>
                                 <img src={item.socialIcon} alt={item.socialIcon} className='w-12 h-12' />
@@ -31,12 +31,12 @@ const Contact = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={ProfilePic} alt="ProfilePic" width={400} height={500} />
+                    <img src={ProfilePic} alt="ProfilePic" width={400} />
                 </div>
             </div>
 
             <div className='py-10' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
-                <form className='w-1/3 mx-auto'>
+                <form className='w-full md:w-1/3 px-5 md:px-0 mx-auto'>
                     <div className="relative mb-6" data-te-input-wrapper-init>
                         <input
                             type="text"
