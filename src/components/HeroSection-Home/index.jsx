@@ -6,12 +6,14 @@ import { Coder, Designer } from './constant';
 
 const HeroSection = () => {
     return (
+        <>
+        <div className='hidden lg:block'>
             <HeroSectionStyle>
                 <ReactCompareSlider
                     changePositionOnHover={true}
                     handle={false}
                     itemOne={
-                        <div className='hidden mx-auto lg:flex items-start justify-center bg-white' >
+                        <div className='mx-auto flex items-start justify-center bg-white' >
                             <div className='w-72 mt-32'>
                                 {Designer.map((item) => (
                                     <>
@@ -54,6 +56,11 @@ const HeroSection = () => {
                     }
                 />
             </HeroSectionStyle>
+        </div>
+        <div>
+            
+        </div>
+        </>
     );
 };
 
