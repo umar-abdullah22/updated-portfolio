@@ -35,7 +35,7 @@ const valueFormatter = value => `${value}%`;
 
 function BarsDataset() {
     return (
-        <div className='m-auto flex justify-center'>
+        <div className='mx-auto flex justify-center'>
             <BarChart
                 dataset={dataset}
                 xAxis={[{ scaleType: 'band', dataKey: 'month' }]}

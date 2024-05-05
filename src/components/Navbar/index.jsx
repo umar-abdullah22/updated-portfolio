@@ -5,7 +5,6 @@ import { NavbarStyling } from './style';
 import { Link } from 'react-router-dom';
 import { Spin as Hamburger } from 'hamburger-react'
 
-
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
 
@@ -38,7 +37,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Small Screen */}
-                <div className={isOpen === true ? 'block w-80 h-screen px-5 py-2 fixed top-0 left-0 z-50 rounded-tr-lg rounded-br-lg animate__slideInLeft' : 'hidden'} style={{ background: 'linear-gradient(22deg, rgba(2,0,36,1) 30%, rgba(45,52,54,1) 70%)' }}>
+                <div className={isOpen === true ? 'block w-80 h-screen px-5 py-2 fixed top-0 left-0 z-50 rounded-tr-lg rounded-br-lg' : 'hidden'} style={{ background: 'linear-gradient(22deg, rgba(2,0,36,1) 30%, rgba(45,52,54,1) 70%)' }}>
                     <div className=''>
                         <Link to="/">
                             <img src={Logo} alt="Logo" className='h-16 w-16 rounded-full' />
