@@ -32,7 +32,7 @@ const About = () => {
         ))}
       </div>
       <div className='py-3 border-t border-b' style={{ backgroundImage: "linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)" }}>
-        <div className='hidden lg:block w-full lg:w-2/3 my-10 mx-auto xl:flex items-start justify-between'>
+        <div className='hidden w-full lg:w-2/3 my-10 mx-auto lg:flex items-start justify-between'>
           <div>
             {Designer.map((item, index) => (
               <div key={index}>
